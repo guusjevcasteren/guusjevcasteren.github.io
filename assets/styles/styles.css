@@ -53,20 +53,36 @@ nav ul li a:hover {
 
 /*Code for the content classs, this is the black box with the text in it*/
 .content {
-    
-    border: 4px solid #000; /* Zwarte lijn rondom het kader */
-   width: 186,619mm;
-   height: 58.561mm;
+    border: 8px solid #000; /* Zwarte lijn rondom het kader */
+    width: 160mm;
+    height: 54mm;
     padding: 20px;
 }
 
-.container {
+.container-fluid {
     text-align: left; /* Tekst links uitgelijnd */
 }
 
-.mainDiv img{ 
-    display: flex;
-    max-width: 50%; 
-    max-height: 50%; 
+
+.content {
+font-family: "din-condensed", sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 100px;
+margin: 10px;
+letter-spacing: -5px;
+line-height: 0.8em ;
 }
 
+.image-collage {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Verdelen in 3 kolommen */
+    grid-auto-rows: 1fr;
+    grid-gap: 10px;
+}
+
+.image-collage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
