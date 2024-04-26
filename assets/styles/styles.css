@@ -51,6 +51,31 @@ nav ul li a:hover {
     background-color: #dad5d5f4; /* Hover effect */
 }
 
+
+.registrationIcon {
+    float: right; /* Plaatst het element aan de rechterkant van de navigatiebalk */
+    margin-left: -20px; /* Voegt wat ruimte toe tussen de afbeelding en andere items in de navigatiebalk */
+    margin-right: 10px;
+    margin-top: -5px;
+}
+
+.registrationIcon img {
+    width: 23px; /* Pas de breedte van de afbeelding aan naar wens */
+    height: auto; /* Behoudt de aspectverhouding van de afbeelding */
+}
+
+
+.favouritesIcon {
+    float: right; /* Plaatst het element aan de rechterkant van de navigatiebalk */
+    margin-left: 10px; /* Voegt wat ruimte toe tussen de afbeelding en andere items in de navigatiebalk */
+}
+
+.favouritesIcon img {
+width: 30px;
+height: auto;
+}
+
+
 /*Code for the content classs, this is the black box with the text in it*/
 .content {
     border: 8px solid #000; /* Zwarte lijn rondom het kader */
@@ -81,8 +106,143 @@ line-height: 0.8em ;
     grid-gap: 10px;
 }
 
-.image-collage img {
+.image-collage a{
+    width: 400px;
+    height: 400px;
+    display: block;
+    margin: 10px;
+}
+
+.image-collage a img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    margin: 10px;
+}
+
+
+.imageLink {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+}
+
+.image-container {
+    position: relative; /* Zorgt ervoor dat de absolute gepositioneerde link relatief is aan deze container */
+    display: inline-block; /* Zorgt ervoor dat de container alleen de breedte en hoogte van de afbeelding inneemt */
+}
+
+.link-text {
+    position: absolute; /* Maakt de link absoluut gepositioneerd binnen de container */
+    bottom: 0; /* Plaatst de link aan de onderkant van de container */
+    left: 0; /* Plaatst de link aan de linkerkant van de container */
+    background-color: rgba(255, 255, 255, 0.5); /* Achtergrondkleur van de link (optioneel) */
+    padding: 5px; /* Ruimte rondom de linktekst (optioneel) */
+}
+
+
+/* onderstaande is voor de opmaak van de links in de afbeeldingen 
+deze links zorgen ervoor dat de opmaak van all recipes page helemaal kut worden*/
+.image-collage {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-container {
+    width: 25%; /* Zorg ervoor dat elke container 25% van de breedte van de container inneemt */
+    padding: 10px; /* Voeg wat ruimte toe tussen elke afbeelding */
+    box-sizing: border-box; /* Zorgt ervoor dat padding binnen de breedte van de container wordt opgenomen */
+}
+
+.image-container img {
+    width: 100%; /* Zorgt ervoor dat elke afbeelding de volledige breedte van de container inneemt */
+    display: block; /* Verwijder eventuele witruimte onder de afbeelding */
+}
+
+/* Optioneel: stijl voor de hover-effect */
+.image-container:hover {
+    background-color: #f0f0f0; /* Verander de achtergrondkleur van de container bij hover */
+}
+
+/* registreer pagina komt nu*/
+.custom-heading {
+    margin-left: 10px;
+    font-family:Condensed, Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* form een styling geven hieronder*/
+.custom-form {
+    border: 1px solid #ccc; /* Stel een rand in rondom het formulier */
+    padding: 20px; /* Voeg wat ruimte toe binnen het kader */
+    font-family: Condensed, Arial, Helvetica, sans-serif;  /* Stel het gewenste lettertype in voor het formulier */
+    font-weight: bold;
+}
+
+
+.custom-form input[type="text"],
+.custom-form input[type="email"],
+.custom-form input[type="password"],
+.custom-form input[type="confirmPassword"],
+.custom-form input[type="name"],
+.custom-form input[type="surname"],
+.custom-form input[type="dateOfBirth"],
+.custom-form input[type="gender"],
+
+.custom-form textarea {
+    width: 30%; /* Maak de invoervelden volledig breed binnen het formulier */
+    padding: 10px; /* Voeg wat ruimte toe binnen de invoervelden */
+    margin-bottom: 15px; /* Voeg wat ruimte toe tussen de invoervelden */
+    border: 1px solid #000000; /* Stel een rand in rondom de invoervelden */
+    border-radius: 0px; /* Geef de invoervelden afgeronde hoeken */
+}
+
+/* styling voor het keuze menu in de registratie ding*/
+/* Stijl voor het keuzemenu */
+select {
+    width: 30%; 
+    padding: 10px; 
+    border: 1px solid #000000; 
+    border-radius: 0px; /
+    font-family: Condensed, Arial, Helvetica, sans-serif;  /* Stel het gewenste lettertype in voor het formulier */
+}
+
+/* Stijl voor het formulierkader */
+.custom-form {
+    border: 7px solid #000; /* Rand van het kader met een dikte van 2px en zwarte kleur */
+    padding: 20px; /* Ruimte binnen het kader */
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+
+/* Stijl voor de opties in het keuzemenu */
+select option {
+    padding: 10px; /* Ruimte binnen elke optie in het keuzemenu */
+    font-family: Arial, sans-serif; /* Lettertype voor de opties in het keuzemenu */
+}
+
+/* Stijl voor de label */
+label {
+    font-weight: bold; /* Maak de label vetgedrukt */
+}
+
+button { 
+    background-color: #ffffff;
+    color: #000;
+    width: 15%; 
+    padding: 10px; 
+    border: 3px solid #000000; 
+    border-radius: 0px; /
+    border-width: 5px;
+    font-family: Condensed, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+button:hover {
+background-color: #000000;
+color: #ffffff
 }
