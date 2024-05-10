@@ -26,7 +26,7 @@ body{
 
 nav {
     border-top: 1px solid #000; /* Dunne lijn boven de header */
-    border-bottom: 1px solid #000; /* Dunne lijn onder de header */
+    border-bottom: 1px solid #000; 
 }
 
 nav ul {
@@ -76,16 +76,14 @@ height: auto;
 }
 
 
-/*Code for the content classs, this is the black box with the text in it*/
-.content {
-    border: 8px solid #000; /* Zwarte lijn rondom het kader */
-    width: 160mm;
-    height: 54mm;
-    padding: 20px;
-}
 
-.container-fluid {
-    text-align: left; /* Tekst links uitgelijnd */
+/* Code voor dat blok om de teksten heen van: All recipes, etc. */
+.tekstbox{
+text-align: left; /* Tekst links uitgelijnd */
+border: 8px solid #000; /* Zwarte lijn rondom het kader */
+display: inline-block;
+    padding: 20px;
+width:fit-content;
 }
 
 
@@ -96,8 +94,21 @@ font-weight: 300;
 font-size: 100px;
 margin: 10px;
 letter-spacing: -5px;
-line-height: 0.8em ;
+line-height: 0.8em ; 
 }
+
+.type {
+    font-family: "din-condensed", sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 30px;
+    margin: 10px;
+    letter-spacing: -2px;
+    line-height: 0.8em ; 
+    display: flex; 
+    justify-content: center;
+    }
+    
 
 .image-collage {
     display: grid;
@@ -200,7 +211,6 @@ deze links zorgen ervoor dat de opmaak van all recipes page helemaal kut worden*
 }
 
 /* styling voor het keuze menu in de registratie ding*/
-/* Stijl voor het keuzemenu */
 select {
     width: 30%; 
     padding: 10px; 
@@ -212,10 +222,12 @@ select {
 /* Stijl voor het formulierkader */
 .custom-form {
     border: 7px solid #000; /* Rand van het kader met een dikte van 2px en zwarte kleur */
+    display:inline-flex
     padding: 20px; /* Ruimte binnen het kader */
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 400px;
+    margin-right: 400px;
     text-align: center;
+
 }
 
 
@@ -245,4 +257,87 @@ button {
 button:hover {
 background-color: #000000;
 color: #ffffff
+}
+
+
+.wrapper {
+    border: 8px solid #000; /* Zwarte lijn rondom het kader */
+    width: 180mm;
+    padding: 20px;
+ position: absolute;
+ top: 50%;
+ left: 25%;
+ right: 25%;
+    flex-direction: column; /* Plaats de titel boven de inhoud */
+    align-items: center; /* Centreer de inhoud horizontaal */
+    justify-content: center;
+}
+
+.title {
+    font-weight: bold; /* Maak de titel vetgedrukt */
+    font-size: 1.2em; /* Maak de titel iets groter */
+}
+
+.text {
+    margin-top: 10px; /* Ruimte tussen titel en inhoud */
+}
+
+
+
+/* Voeg deze stijlen toe om de footer onderaan de pagina te plaatsen */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    min-height: calc(100% - 100px); /* Zorg ervoor dat er altijd minimaal 100px tussen de wrapper en de footer is */
+}
+
+
+/*ONDERSTAANDE codes gaan over de footer van de website*/
+
+.footer {
+    /* position: absolute;
+    bottom: 0; */
+    width: 100%;
+    height: 200px;
+    background-color: #333; /* Grijze achtergrondkleur */
+    color: #fff; /* Witte tekstkleur */
+    padding: 20px 0; /* Ruimte rondom de inhoud van de footer */
+}
+
+
+
+.imagefooter {
+    display: flex; 
+    justify-content: center;
+    align-items: center; /* Verticaal centreren */
+margin-top: -20px;
+}
+
+.footerTekstL {
+    text-align: left; 
+margin-left: 10px;
+font-family: "din-condensed", sans-serif;
+    font-style: normal;
+    font-weight: 50;
+    font-size: 25px;
+    margin: 10px;
+    letter-spacing: -0.5px;
+    line-height: 0.8em ; 
+}
+
+.LogoSocialsFooter {
+    display: flex;
+    justify-content: left;
+    margin-left: 10px;
+}
+
+
+.tekstnaastAF {
+font-family:"din-condensed", sans-serif ;
+color: black;
+font-weight: 45px;
 }
