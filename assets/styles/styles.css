@@ -79,11 +79,12 @@ height: auto;
 
 /* Code voor dat blok om de teksten heen van: All recipes, etc. */
 .tekstbox{
-text-align: left; /* Tekst links uitgelijnd */
-border: 8px solid #000; /* Zwarte lijn rondom het kader */
-display: inline-block;
+    text-align: left; /* Tekst links uitgelijnd */
+    border: 8px solid #000; /* Zwarte lijn rondom het kader */
+    display: inline-block;
     padding: 20px;
-width:fit-content;
+    width: auto; /* Pas de breedte automatisch aan de inhoud aan */
+    height: auto; 
 }
 
 
@@ -109,12 +110,17 @@ line-height: 0.8em ;
     justify-content: center;
     }
     
+.fave-margin {
+    margin-top: 250px ;
+    margin-bottom: 250px;
+}
 
 .image-collage {
     display: grid;
     grid-template-columns: repeat(5, 1fr); /* Verdelen in 3 kolommen */
     grid-auto-rows: 1fr;
     grid-gap: 10px;
+    margin-top: 120px;
 }
 
 .image-collage a{
@@ -186,7 +192,6 @@ deze links zorgen ervoor dat de opmaak van all recipes page helemaal kut worden*
 
 /* form een styling geven hieronder*/
 .custom-form {
-    border: 1px solid #ccc; /* Stel een rand in rondom het formulier */
     padding: 20px; /* Voeg wat ruimte toe binnen het kader */
     font-family: Condensed, Arial, Helvetica, sans-serif;  /* Stel het gewenste lettertype in voor het formulier */
     font-weight: bold;
@@ -215,21 +220,16 @@ select {
     width: 30%; 
     padding: 10px; 
     border: 1px solid #000000; 
-    border-radius: 0px; /
+    border-radius: 0px; 
     font-family: Condensed, Arial, Helvetica, sans-serif;  /* Stel het gewenste lettertype in voor het formulier */
 }
 
+
 /* Stijl voor het formulierkader */
 .custom-form {
-    border: 7px solid #000; /* Rand van het kader met een dikte van 2px en zwarte kleur */
-    display:inline-flex
+    border: 7px solid #000; /* Rand van het kader met een dikte van 7px en zwarte kleur */
     padding: 20px; /* Ruimte binnen het kader */
-    margin-left: 400px;
-    margin-right: 400px;
-    text-align: center;
-
 }
-
 
 /* Stijl voor de opties in het keuzemenu */
 select option {
@@ -248,7 +248,7 @@ button {
     width: 15%; 
     padding: 10px; 
     border: 3px solid #000000; 
-    border-radius: 0px; /
+    border-radius: 0px; 
     border-width: 5px;
     font-family: Condensed, Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -292,20 +292,29 @@ html, body {
 }
 
 .wrapper {
-    min-height: calc(100% - 100px); /* Zorg ervoor dat er altijd minimaal 100px tussen de wrapper en de footer is */
-}
+    text-align: left; /* Tekst links uitgelijnd */
+    border: 8px solid #000; /* Zwarte lijn rondom het kader */
+    display: inline-block;
+    padding: 50px;
+    width: auto; /* Pas de breedte automatisch aan de inhoud aan */
+    height: auto; /* Pas de hoogte automatisch aan de inhoud aan */
 
+}
 
 /*ONDERSTAANDE codes gaan over de footer van de website*/
 
 .footer {
-    /* position: absolute;
+   /* position: absolute;
     bottom: 0; */
     width: 100%;
-    height: 200px;
+    height: 350px;
     background-color: #333; /* Grijze achtergrondkleur */
     color: #fff; /* Witte tekstkleur */
     padding: 20px 0; /* Ruimte rondom de inhoud van de footer */
+}
+
+.homep {
+    margin-top: 80px;
 }
 
 
@@ -324,7 +333,7 @@ font-family: "din-condensed", sans-serif;
     font-style: normal;
     font-weight: 50;
     font-size: 25px;
-    margin: 10px;
+    margin-left: 20px;
     letter-spacing: -0.5px;
     line-height: 0.8em ; 
 }
@@ -332,12 +341,72 @@ font-family: "din-condensed", sans-serif;
 .LogoSocialsFooter {
     display: flex;
     justify-content: left;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 
 .tekstnaastAF {
 font-family:"din-condensed", sans-serif ;
-color: black;
+color: #ffffff;
 font-weight: 45px;
+margin-left: 14px;
+line-height: 34px;
+
 }
+
+.justify-content-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Optioneel: hoogte van de container instellen op de volledige hoogte van het viewport */
+}
+
+/*footer about us page*/
+.about {
+margin-bottom 1px ;
+flex: shrink 0; ;
+}
+
+.recipefooter {
+    margin-top: 60px;
+}
+
+/*zoekbalk naar rechts zetten*/
+
+
+.search-container {
+    display: flex;
+    justify-content: right;
+    margin-top: -162px;
+    margin-right: 20px;
+}
+
+.search-container input[type="text"] {
+    padding: 10px;
+    display: flex;
+    width: 400px;
+    border: 3px solid #000000;
+    outline: none;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.search-container button:hover {
+    background-color: #4b4b4b;
+}
+
+
+.container {
+    flex: 1;
+}
+
+.carousel {
+    margin-top: 80px;
+ }
