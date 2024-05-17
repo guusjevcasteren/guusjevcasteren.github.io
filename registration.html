@@ -2,170 +2,114 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Home page</title>
-<link rel="stylesheet" href="assets/styles/styles.css">
-
-<!-- onderstaande is een link naar bootsstrap file??-->
-<link rel="stylesheet" href="assets/styles/bootstrap.css">
-
-<!-- onderstaande link is voor het lettertype-->
-<link rel="stylesheet" href="https://use.typekit.net/lye7lgn.css">
-
-<!-- Onderstaande code is ervoor dat de website voor alle apparaten goed te bekijken is -->
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Register</title>
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <link rel="stylesheet" href="assets/styles/bootstrap.css">
+    <link rel="stylesheet" href="https://use.typekit.net/lye7lgn.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
-
-
 <body>
-        <!-- First code for logo on top of the page-->
-        <header class="Foodies_Logo_BW_Tekengebied">
-            <img src="assets/images/Foodies_Logo_BW_Tekengebied 1-01.png" alt="logo foodies">
-        </header>
+    <!-- First code for logo on top of the page -->
+    <header class="Foodies_Logo_BW_Tekengebied">
+        <img src="assets/images/Foodies_Logo_BW_Tekengebied1-01.png" alt="logo foodies">
+    </header>
 
-        <nav> 
-            <ul>
-                <li>
-                    <a href="index.html"> for you.</a></li>
-    
-                <li>
-                    <a href="all_recipes.html"> all recipes. </a></li>
-                
-                <li>
-            <a href="foodblog.html"> foodblog. </a></li>
-            
-            <li> 
-                <a href="about us.htm"> about us. </a></li>
-               
+    <nav> 
+        <ul>
+            <li><a href="index.html">for you.</a></li>
+            <li><a href="all_recipes.html">all recipes.</a></li>
+            <li><a href="foodblog.html">foodblog.</a></li>
+            <li><a href="aboutUs.html">about us.</a></li>
             <li class="registrationIcon">
-                <a href="login.html">
-                    <img src="assets/images/images icoontjes/register icoontje.png" alt="image register icon">
+                <a href="registration.html">
+                    <img src="assets/images/imagesIcoontjes/register_icoontje.png" alt="image register icon">
                 </a>
-
+            </li>
             <li class="favouritesIcon">
                 <a href="favorites.html">
-                    <img src="assets/images/images icoontjes/hartje rood dikkere lijn.png" alt="image favourite hart">
-
+                    <img src="assets/images/imagesIcoontjes/hartje_rood_dikkere_lijn.png" alt="image favourite hart">
                 </a>
             </li>
-            </li>
-            </ul>
-        </nav>   
+        </ul>
+    </nav>
 
-
-        <!-- dit is een code voor de letters in de box boven aan de pagina !-->
-       <br> 
-       <div class="content">
-           <div class="tekstbox">
-       <p>REGISTER. </p>
-           </div>
-       </div>
-
-
-
-       <!-- a form is used to give the user the possibility to submit some information
-       a form requires 2 attributes: 
-       action: th URL it should send the information to 
-       mathod: the type of process it should use (post/get)-->
-       
-       
-       <br>
-       <br>
-       <br>
-
-      <!-- deze code stond in die vorige form. ik weet niet of ik deze erin moet houden
-        maar wanneer ik deze erin houd, werkt de styling code niet die in de css staat 
-        <form action="guusjevcasteren@gmail.com" method="post"
-       enctype="text/plain"> -->
-       
-
-       <form class="custom-form" >
-
-       <label for="username"> username.</label>
-       <br>
-       <input type="text" name="username" id="username">
-    
-       <br>
-       <label for="e-mailadress"> e-mailadress. </label>
-       <br>
-       <input type="text" name="e-mailadress" id="e-mailadress">
-       <br>
-       <!-- setting the type to password, hides the password text in browser-->
-       <label for="password" > password. </label>
-       <br>
-       <input type="password" name="password" id="password">
-
-       <br>
-       <label for="password" > confirm password. </label>
-       <br>
-       <input type="password" name="password" id="password">
-
-      <br>
-       <label for="name"> name. </label>
-       <br>
-       <input type="name" name="name" id="name">  
-       
-       <br>
-       <label for="surname"> surname. </label>
-       <br>
-       <input type="surname" name="surname" id="surname">  
-      
-       <br> 
-       <label for="dateOfBirth"> date of birth. </label>
-       <br>
-       <input type="dateOfBirth" name="dateOfBirth" id="dateOfBirth">  
-
-        <br>
-       <label for="gender"> gender. </label>
-       <br>
-       <select name="gender" id="gender">
-       <option value="male"> male</option>
-       <option value="female"> female</option>
-       <option value="other"> other</option>
-       <option value="ratherNotSay"> I would rather not say</option>
-       </select>
-    
-       <br>        
-       <br>
-       <br>
-       
-       <button type="submit"> REGISTER </button>
-       <button type="reset"> CANCEL</button>
-       
-
-     </form>
-       </form>
+    <br> 
+    <div class="content">
+        <div class="tekstbox">
+            <p>REGISTER.</p>
+        </div>
     </div>
-</div>
-</div>
 
-   
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <form class="custom-form" action="mailto:guusjevcasteren@gmail.com" method="post" enctype="text/plain">
+        <label for="username">Username:</label>
+        <br>
+        <input type="text" name="username" id="username">
+        <br>
+
+        <label for="emailAddress">E-mail Address:</label>
+        <br>
+        <input type="email" name="emailAddress" id="emailAddress">
+        <br>
+
+        <label for="password">Password:</label>
+        <br>
+        <input type="password" name="password" id="password">
+        <br>
+
+        <label for="name">Name:</label>
+        <br>
+        <input type="text" name="name" id="name">
+        <br>
+
+        <label for="surname">Surname:</label>
+        <br>
+        <input type="text" name="surname" id="surname">
+        <br>
+
+        <label for="dateOfBirth">Date of Birth:</label>
+        <br>
+        <input type="date" name="dateOfBirth" id="dateOfBirth">
+        <br>
+        <br>
+        <label for="gender">Gender:</label>
+        <br>
+        <select name="gender" id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+            <option value="ratherNotSay">I would rather not say</option>
+        </select>
+        <br>
+        <br>
+        <br>
+
+        <button type="submit">REGISTER</button>
+        <button type="reset">CANCEL</button>
+    </form>
+    <br>
+    <br> 
+    <br>
+
+    <footer class="footer about">
+        <div class="imagefooter">
+            <img src="assets/images/foodies_logo_wit.png" alt="Foodies Logo" class="footer-logo" width="100" height="60">
+        </div>
+        <div class="footerTekstL">
+            <p>FOLLOW US:</p>
+        </div>
+        <div class="LogoSocialsFooter">
+            <img src="assets/images/imagesIcoontjes/socialmedialogos.png" alt="Logo Social media" width="30" height="100">
+            <div class="tekstnaastAF">
+                <p>FOODIES.<br>FOODIES.<br>+31 6 20319240</p>
+            </div>
+        </div>       
+    </footer>
      
-<footer class="footer homep">
-    <div class="imagefooter">
-        <img src="assets/images/foodies_logo_wit.png" alt="Foodies Logo" class="footer-logo" width="100px" height="60px">
-    </div>
-  
-    <div class="footerTekstL">
-    <p>
-        FOLLOW US: 
-    </p>
-    </div>
-  
-    <div class="LogoSocialsFooter">
-    <img src="assets/images/images icoontjes/socialmedialogos.png" alt="Logo Social media" width="30" height="100">
-  
-    <div class="tekstnaastAF">
-        <p class="teskt aanpasssen!!!">
-            FOODIES.
-            <br>
-            FOODIES.
-            <br>
-            +31 6 20319240
-        </p>
-        <br>
-        <br>
-        <br>
-    </div>
-    </div>       
-  
+    <script src="assets/scripts/bootstrap.js"></script>
+</body>
+</html>
